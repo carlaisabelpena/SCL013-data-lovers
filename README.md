@@ -85,7 +85,7 @@ Ya con la selección del contenido , seleccionamos los aspectos visuales que ten
 
 ⦁	Paleta de colores: Elegimos dos colores, (celeste y amarillo) los combina bien, si bien son vibrantes, no son cansadores a la vista, se jugó con el degradado para darle texturas y con la paleta de grises para texto. Para el logotipo, se usaron los colores oficiales del logo de Pokémon, por lo que contrasta perfecto.
 
-img_readme/paleta.jpg
+https://github.com/carlaisabelpena/SCL013-data-lovers/blob/master/img_readme/baja.jpg?raw=true
 
 ## 7. :busts_in_silhouette: Historias de Usuario
 
