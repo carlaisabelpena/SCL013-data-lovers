@@ -64,13 +64,19 @@ Aquí nos concentramos en identificar los aspectos más relevantes para los juga
 
 ⦁	Prototipo de Alta Fidelidad:
 
-Una vez que concluímos nuestro protipo de baja fidelidad, consultamos con nuestros usuarios sobre el contenido y las interacciones que tendrían, y comenzamos a definir un prototipo de alta fidelidad según sus necesidades.
+Una vez que concluímos nuestro protipo de baja fidelidad, consultamos con nuestros usuarios sobre el contenido y las interacciones que tendrían, y comenzamos a definir un prototipo de alta fidelidad según sus necesidades, cambiamos el nombre de nuestro producto por uno propio "Asistente Pokémon", y descartamos el filtro DPS, ya que decidimos acotarnos a la data entregada porque sólo con esos datos ya es posible hacer una buena elección y definir estrategia.
 
-Se utilizó [Figma] (https://www.figma.com/file/y7d2cZ3HjnDb3vZZv6SQ9P/Asistente-Pok%C3%A9mon?node-id=0%3A1) pata la presentación visual y para que los usuarios pudieran recorrerlo con interacciones, simulando el flujo de la plataforma web.
+Se utilizó [Figma] (https://www.figma.com/file/y7d2cZ3HjnDb3vZZv6SQ9P/Asistente-Pok%C3%A9mon?node-id=0%3A1) para la presentación visual y para que los usuarios pudieran recorrerlo con interacciones, simulando el flujo de la plataforma web.
 
-img_readme/primera-pantalla.jpg
+![Screenpantalla](img_readme/primera-pantalla.jpg)
 
-5.1 Iteración del Prototipo: Una vez que montamos nuestro prototipo nuestra primera iteración fue mostrada a nuestras compañeras de commoncore donde nos hicieron alcances de cosas visuales como: tamaño de header, por temas de scroll.
+Diseño responsive:
+
+![Screenresponsive](img_readme/res1.PNG)
+![Screenresponsive2](img_readme/res2.PNG)
+![Screenresponsive3](img_readme/res3.PNG)
+
+5.1 Iteración del Prototipo: Una vez que montamos nuestro prototipo nuestra primera iteración fue mostrada a nuestras compañeras de Common core donde nos hicieron alcances de cosas visuales como: tamaño de header, por temas de scroll.
 
 
 ## 6. :computer: Diseño de Interfaz
@@ -85,6 +91,7 @@ Ya con la selección del contenido , seleccionamos los aspectos visuales que ten
 
 ⦁	Paleta de colores: Elegimos dos colores, (celeste y amarillo) los combina bien, si bien son vibrantes, no son cansadores a la vista, se jugó con el degradado para darle texturas y con la paleta de grises para texto. Para el logotipo, se usaron los colores oficiales del logo de Pokémon, por lo que contrasta perfecto.
 
+![Screenshotpaleta](img_readme/paleta.jpg)
 
 ## 7. :busts_in_silhouette: Historias de Usuario
 
@@ -110,72 +117,3 @@ Para: Poder ganarles a mis oponentes.
 
 
 
-### Contenido de referencia
-
-#### Diseño de experiencia de usuario (User Experience Design)
-
-* [Investigación con usuarios / entrevistas](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/intro-ux/01-el-proceso-de-diseno/00-el-proceso-de-diseno)
-* [Principios de diseño visual](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/diseno-visual)
-
-#### Desarrollo Front-end
-
-* [Unidad de testing en curso de JavaScript en LMS.](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/11-testing/00-opening)
-* [Unidad de arreglos en curso de JavaScript en LMS.](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/04-arrays/01-arrays)
-* [Unidad de objetos en curso de JavaScript en LMS.](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/05-objects/01-objects)
-* [Unidad de funciones en curso de JavaScript en LMS.](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/javascript/03-functions/00-opening)
-* [Unidad de DOM en curso de Browser JavaScript en LMS.](https://lms.laboratoria.la/cohorts/scl-2020-03-bc-core-scl013/courses/browser/02-dom/00-opening)
-* [Array en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array)
-* [Array.sort en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/sort)
-* [Array.map en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/map)
-* [Array.filter en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/filter)
-* [Array.reduce en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/reduce)
-* [Array.forEach en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array/forEach)
-* [Object.keys en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/keys)
-* [Object.entries en MDN](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Object/entries)
-* [Fetch API en MDN](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-* [json.org](https://json.org/json-es.html)
-* [expressions-vs-statements](https://2ality.com/2012/09/expressions-vs-statements.html)
-* [expresión vs sentencia](https://openclassrooms.com/en/courses/4309531-descubre-las-funciones-en-javascript/5108986-diferencia-entre-expresion-y-sentencia)
-* [datos atómicos vs datos estructurados](https://www.todojs.com/tipos-datos-javascript-es6/)
-* [Modulos: Export](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export)
-* [Modulos: Import](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import)
-
-#### Herramientas
-
-* [Git](https://git-scm.com/)
-* [GitHub](https://github.com/)
-* [GitHub Pages](https://pages.github.com/)
-* [Node.js](https://nodejs.org/)
-* [Jest](https://jestjs.io/)
-
-#### Organización del Trabajo
-
-* [Historias de Usuario](https://www.youtube.com/watch?v=ky6wFiF5vMk&t=344s).
-  Ojo que Cris no diferencia _Definición de terminado_ de _Criterios de
-  Aceptación_ y nosotros sí lo haremos. Más detalles en la guía.
-* [Cómo dividir H.U.](https://www.youtube.com/watch?v=Ueq786iZ30I&t=341s)
-* [Guía para Data Lovers](https://docs.google.com/presentation/d/e/2PACX-1vQhx9D36NjpH-Daea-ITPUDUzNL8ZiNAprq_7b5PSUrfutk45tEtaOLz2lmd8f54_5jX1hypDM8f8SM/pub?start=false&loop=false&delayms=60000)
-
-***
-
-## 9. Checklist
-
-* [ ] Usa VanillaJS.
-* [ ] No hace uso de `this`.
-* [ ] Pasa linter (`npm run pretest`)
-* [ ] Pasa tests (`npm test`)
-* [ ] Pruebas unitarias cubren un mínimo del 70% de statements, functions y
-  lines y branches.
-* [ ] Incluye _Definición del producto_ clara e informativa en `README.md`.
-* [ ] Incluye historias de usuario en `README.md`.
-* [ ] Incluye _sketch_ de la solución (prototipo de baja fidelidad) en
-  `README.md`.
-* [ ] Incluye _Diseño de la Interfaz de Usuario_ (prototipo de alta fidelidad)
-  en `README.md`.
-* [ ] Incluye link a Zeplin en `README.md`.
-* [ ] Incluye el listado de problemas que detectaste a través de tests de
-  usabilidad en el `README.md`.
-* [ ] UI: Muestra lista y/o tabla con datos y/o indicadores.
-* [ ] UI: Permite ordenar data por uno o más campos (asc y desc).
-* [ ] UI: Permite filtrar data en base a una condición.
-* [ ] UI: Es _responsive_.
