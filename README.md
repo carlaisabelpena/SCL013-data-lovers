@@ -69,6 +69,8 @@ Una vez que concluímos nuestro protipo de baja fidelidad, consultamos con nuest
 Se utilizó [Figma] (https://www.figma.com/file/y7d2cZ3HjnDb3vZZv6SQ9P/Asistente-Pok%C3%A9mon?node-id=0%3A1) para la presentación visual y para que los usuarios pudieran recorrerlo con interacciones, simulando el flujo de la plataforma web.
 
 ![Screenpantalla](img_readme/primera-pantalla.jpg)
+![Screenfiltro](img_readme/filtro.jpg)
+![Screentarjeta](img_readme/tarjeta.jpg)
 
 :iphone: Diseño responsive:
 
