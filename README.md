@@ -60,7 +60,7 @@ En cualquier momento y lugar, necesitas sólo un tiempo libre y acceso a un comp
 
 Aquí nos concentramos en identificar los aspectos más relevantes para los jugadores y quienes serían nuestros usuarios, qué es lo que realmente buscarían en nuestra web/app. Una vez identificado esto, distribuímos la información de manera lo más práctica, en lo visual y también, para encontrar la información.
 
-img_readme/baja.jpg
+![Screenshot](img_readme/baja.jpg)
 
 ⦁	Prototipo de Alta Fidelidad:
 
@@ -85,7 +85,6 @@ Ya con la selección del contenido , seleccionamos los aspectos visuales que ten
 
 ⦁	Paleta de colores: Elegimos dos colores, (celeste y amarillo) los combina bien, si bien son vibrantes, no son cansadores a la vista, se jugó con el degradado para darle texturas y con la paleta de grises para texto. Para el logotipo, se usaron los colores oficiales del logo de Pokémon, por lo que contrasta perfecto.
 
-https://github.com/carlaisabelpena/SCL013-data-lovers/blob/master/img_readme/baja.jpg?raw=true
 
 ## 7. :busts_in_silhouette: Historias de Usuario
 
