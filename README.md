@@ -57,17 +57,19 @@ En cualquier momento y lugar, necesitas sólo un tiempo libre y acceso a un comp
 
 
 ⦁	Boceto de prototipo de baja fidelidad en lápiz y papel:
+
 Aquí nos concentramos en identificar los aspectos más relevantes para los jugadores y quienes serían nuestros usuarios, qué es lo que realmente buscarían en nuestra web/app. Una vez identificado esto, distribuímos la información de manera lo más práctica, en lo visual y también, para encontrar la información.
 
-(FOTO BOCETO MANO)
+img_readme/baja.jpg
 
 ⦁	Prototipo de Alta Fidelidad:
+
 Una vez que concluímos nuestro protipo de baja fidelidad, consultamos con nuestros usuarios sobre el contenido y las interacciones que tendrían, y comenzamos a definir un prototipo de alta fidelidad según sus necesidades.
 
 Se utilizó [Figma] (https://www.figma.com/file/y7d2cZ3HjnDb3vZZv6SQ9P/Asistente-Pok%C3%A9mon?node-id=0%3A1) pata la presentación visual y para que los usuarios pudieran recorrerlo con interacciones, simulando el flujo de la plataforma web.
 
-(FOTO FIGMA)
-![Figma](primera-pantalla.jpg)
+img_readme/primera-pantalla.jpg
+
 5.1 Iteración del Prototipo: Una vez que montamos nuestro prototipo nuestra primera iteración fue mostrada a nuestras compañeras de commoncore donde nos hicieron alcances de cosas visuales como: tamaño de header, por temas de scroll.
 
 
@@ -83,7 +85,7 @@ Ya con la selección del contenido , seleccionamos los aspectos visuales que ten
 
 ⦁	Paleta de colores: Elegimos dos colores, (celeste y amarillo) los combina bien, si bien son vibrantes, no son cansadores a la vista, se jugó con el degradado para darle texturas y con la paleta de grises para texto. Para el logotipo, se usaron los colores oficiales del logo de Pokémon, por lo que contrasta perfecto.
 
-(FOTO PALETA)
+img_readme/paleta.jpg
 
 ## 7. :busts_in_silhouette: Historias de Usuario
 
