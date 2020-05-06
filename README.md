@@ -48,7 +48,7 @@ Obtener toda la información disponible de todos los pokémon de la primera gene
 - Tomar decisiones sobre qué pokémon le es más útil de atrapar.
 - Filtrar el uso de pokémon a la hora de una batalla, según estrategia elegir el más conveniente para poder ganar.
 
-4.2 Cuándo utilizar el producto:
+4.2 :watch: Cuándo utilizar el producto:
 
 En cualquier momento y lugar, necesitas sólo un tiempo libre y acceso a un computador, tablet o smartphone.
 
@@ -70,11 +70,14 @@ Se utilizó [Figma] (https://www.figma.com/file/y7d2cZ3HjnDb3vZZv6SQ9P/Asistente
 
 ![Screenpantalla](img_readme/primera-pantalla.jpg)
 
-Diseño responsive:
+:iphone: Diseño responsive:
 
 ![Screenresponsive](img_readme/res1.PNG)
 ![Screenresponsive2](img_readme/res2.PNG)
 ![Screenresponsive3](img_readme/res3.PNG)
+
+:bookmark_tabs: Para organizarnos de forma óptima utilizamos la herramienta de Trello (https://trello.com/b/D5TBhlWN/data-lovers-pokemon)
+
 
 5.1 Iteración del Prototipo: Una vez que montamos nuestro prototipo nuestra primera iteración fue mostrada a nuestras compañeras de Common core donde nos hicieron alcances de cosas visuales como: tamaño de header, por temas de scroll.
 
