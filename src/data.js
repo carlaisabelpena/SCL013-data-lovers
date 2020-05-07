@@ -1,43 +1,78 @@
-//Funcion por Nombres de los Pokemones
-const stringOfName = (newFilter, currentSelect, dataArreglo) => {
-//  console.log(dataArreglo);
-  return dataArreglo
+//Funcion para Nombres de los Pokemones
+const stringName = (newFilter, currentSelect, dataArray) => {
+ //console.log(dataArray);
+  return dataArray
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.name);
 };
 
-//Función por tipo de los Pokemones
-const stringOfType = (newFilter, currentSelect, dataArreglo) => {
-  return dataArreglo
+//Función para tipo de los Pokemones
+const stringType = (newFilter, currentSelect, dataArray) => {
+  return dataArray
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.type);
 };
 
-//Función por Img
-const stringOfImg = (newFilter, currentSelect, dataArreglo) => {
-  return dataArreglo
+//Función para Img
+const stringImg = (newFilter, currentSelect, dataArray) => {
+  return dataArray
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.img);
 };
 
-//Función de mapear por Altura de Poke
-const stringOfHeight = (newFilter, currentSelect, dataArreglo) => {
-  return dataArreglo
+//Función para altura de los Pokemones
+const stringHeight = (newFilter, currentSelect, dataArray) => {
+  return dataArray
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.height);
 };
 
-//Función de mapear por Peso de Poke
-const stringOfWeight = (newFilter, currentSelect, dataArreglo) => {
-    return dataArreglo
-    .filter((pokemon) => pokemon[newFilter]
-    .includes(currentSelect))
-    .map((pokemon) => pokemon.weight);
+//Función para el Peso de los Pokemones
+const stringWeight = (newFilter, currentSelect, dataArray) => {
+  return dataArray
+  .filter((pokemon) => pokemon[newFilter]
+  .includes(currentSelect))
+  .map((pokemon) => pokemon.weight);
+};
+
+// Función para los caramelos de los pokemones
+const stringCandyCount = (newFilter, currentSelect, dataArray) => {
+  return dataArray
+  .filter((pokemon) => pokemon[newFilter]
+  .includes(currentSelect))
+  .map((pokemon) => pokemon.candy_count)
+  .map((x) => x !== undefined ? x : 'No aplica');
+};
+
+// Función para los Huevos si posee o no
+const stringEgg = (newFilter, currentSelect, dataArray) => {
+  return dataArray
+  .filter((pokemon) => pokemon[newFilter]
+  .includes(currentSelect))
+  .map((pokemon) => pokemon.egg).map((x) => x !== 'Not in Eggs' ? x : 'o km');
+};
+
+//Función puntos de aparicion
+const stringAvgSpawns = (newFilter, currentSelect, dataArray) => {
+  return dataArray
+  .filter((pokemon) => pokemon[newFilter]
+  .includes(currentSelect))
+  .map((pokemon) => pokemon.avg_spawns);
+};
+
+// Función para el tiempo de aparición
+const stringSpawnTime = (newFilter, currentSelect, dataArray) => {
+  return dataArray
+  .filter((pokemon) => pokemon[newFilter]
+  .includes(currentSelect))
+  .map((pokemon) => pokemon.spawn_time);
 };
 
 //Se exportan cada una de las funciones para ser usadas en el main.js
-export { stringOfType, stringOfName, stringOfImg, stringOfHeight, stringOfWeight };
+export { stringType, stringName, stringImg,
+stringHeight, stringWeight, stringCandyCount,
+stringEgg, stringAvgSpawns,stringSpawnTime };
