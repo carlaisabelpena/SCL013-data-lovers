@@ -1,23 +1,12 @@
-import { example, anotherExample } from '../src/data.js';
+import { stringType} from '../src/data.js';
 
 
-describe('example', () => {
+describe('stringType', () => {
   test('is a function', () => {
-    expect(typeof example).toBe('function');
+    expect(typeof stringType).toBe('function');
   });
 
-  test('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
-  test('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
-  });
-
-  test('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
-  });
+  //test('returns `example`', () => {
+    //expect(example()).toBe('example');
+  //});
 });
