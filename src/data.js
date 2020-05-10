@@ -72,7 +72,15 @@ const stringSpawnTime = (newFilter, currentSelect, dataArray) => {
   .map((pokemon) => pokemon.spawn_time);
 };
 
+//Funcion para ordernar la data
+const orderData = (data, sortByName, condition) => {
+  if (condition === "aToZ") {
+    return data.sort((a, b) => (a[sortByName] > b[sortByName]) ? 1 : -1);
+  } else {
+    return data.sort((a, b) => (a[sortByName] < b[sortByName]) ? 1 : -1);
+  }
+}
 //Se exportan cada una de las funciones para ser usadas en el main.js
 export { stringType, stringName, stringImg,
 stringHeight, stringWeight, stringCandyCount,
-stringEgg, stringAvgSpawns,stringSpawnTime };
+stringEgg, stringAvgSpawns,stringSpawnTime, orderData };

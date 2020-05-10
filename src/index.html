@@ -10,93 +10,84 @@
     <link rel="icon" href="img/pokeball.jpg">
   </head>
   <body>
-    <!--header // Inicio // Logo-->
-    <section id="start">
-        <a title="Home" class="imgLogo" href="index.html"><img class="imgLogo" src="img/logo.png" alt="Logo"></a>
-        <div id="root"></div>
-                <!--Área de selects e input-->
-                <div class="selectArea"> 
-                  <select id="selectType"  class="droplists">
-            
-                    <option value="">Tipo de Pokémon:</option>
-                    <option value="Water">Agua</option>
-                    <option value="Fire">Fuego</option>
-                    <option value="Normal">Normal</option>
-                    <option value="Grass">Planta</option>
-                    <option value="Electric">Eléctrico</option>
-                    <option value="Ice">Hielo</option>
-                    <option value="Fighting">Pelea</option>
-                    <option value="Poison">Veneno</option>
-                    <option value="Ground">Tierra</option>
-                    <option value="Flying">Volador</option>
-                    <option value="Psychic">Psíquicos</option>
-                    <option value="Bug">Bicho</option>
-                    <option value="Rock">Roca</option>
-                    <option value="Ghost">Fantasma</option>
-                    <option value="Dragon">Dragón</option>
-                  </select>
-                  <select id="selectOrder" class="droplists">
-                    <option value="">Orden</option>
-                    <option value="">A -Z</option>
-                    <option value="">Z - A</option>
-                  </select>
-                  <!--buscador por debilidad -->
-                  <select id="selectWeak" class="droplists">
-                    <option value="">Debilidad de tu Pokémon:</option>
-                    <option value="Water">Agua</option>
-                    <option value="Fire">Fuego</option>
-                    <option value="Grass">Planta</option>
-                    <option value="Electric">Eléctrico</option>
-                    <option value="Ice">Hielo</option>
-                    <option value="Fighting">Pelea</option>
-                    <option value="Poison">Veneno</option>
-                    <option value="Ground">Tierra</option>
-                    <option value="Flying">Volador</option>
-                    <option value="Psychic">Psíquicos</option>
-                    <option value="Bug">Bicho</option>
-                    <option value="Rock">Roca</option>
-                    <option value="Ghost">Fantasma</option>
-                    <option value="Dragon">Dragón</option>
-                    <option value="Dark">Siniéstro</option>
-                    <option value="Steel">Metal</option>
-                    <option value="Fairy">Hada</option>
-                  </select>
-            
-                   <!-- Buscador de Pokemon -->
-                  <input type="text" id="searchBar" class="searchClass" placeholder="Busca tu Pokémon"></input>
-                </div>
+    <header>
+      <!--header // Inicio // Logo-->
+     <section id="start">
+       <img src="img/logo.png" alt="logo" class="imgLogo">  
+       <div id="root"></div>
+       <!--Área de selects e input-->
+       <div class="selectArea"> 
+         <select id="selectType"  class="droplists">
+           <option value="">TIPO:</option>
+           <option value="Water">Agua</option>
+           <option value="Fire">Fuego</option>
+           <option value="Normal">Normal</option>
+           <option value="Grass">Planta</option>
+           <option value="Electric">Eléctrico</option>
+           <option value="Ice">Hielo</option>
+           <option value="Fighting">Pelea</option>
+           <option value="Poison">Veneno</option>
+           <option value="Ground">Tierra</option>
+           <option value="Flying">Volador</option>
+           <option value="Psychic">Psíquicos</option>
+           <option value="Bug">Bicho</option>
+           <option value="Rock">Roca</option>
+           <option value="Ghost">Fantasma</option>
+           <option value="Dragon">Dragón</option>
+         </select>
+         <select id="selectOrder" class="droplists">
+           <option value="" disabled selected>ORDEN</option>
+           <option value="aToZ">A-Z</option>
+           <option value="zToA">Z-A</option>
+         </select>
+         <!--buscador por debilidad -->
+         <select id="selectWeak" class="droplists">
+           <option value="">DEBILIDAD:</option>
+           <option value="Water">Agua</option>
+           <option value="Fire">Fuego</option>
+           <option value="Grass">Planta</option>
+           <option value="Electric">Eléctrico</option>
+           <option value="Ice">Hielo</option>
+           <option value="Fighting">Pelea</option>
+           <option value="Poison">Veneno</option>
+           <option value="Ground">Tierra</option>
+           <option value="Flying">Volador</option>
+           <option value="Psychic">Psíquicos</option>
+           <option value="Bug">Bicho</option>
+           <option value="Rock">Roca</option>
+           <option value="Ghost">Fantasma</option>
+           <option value="Dragon">Dragón</option>
+           <option value="Dark">Siniéstro</option>
+           <option value="Steel">Metal</option>
+           <option value="Fairy">Hada</option>
+         </select>
+         <!-- Buscador de Pokemon -->
+         <input type="text" id="searchBar" class="searchClass" placeholder="Busca tu Pokémon"></input>
+       </div>
+     </section>
 
-      </section>
-    
-    
-      <div class="container"> 
+     <div class="container"> 
+       <!--Bienvenida -->
+       <section id="welcome">
+         <!--Mensaje -->
+         <div id="boxText" class="boxText1">
+           <img src="img/poke_trainer.png" id="imgTrainer" alt="">
+           <h1>BIENVENIDO ASISTENTE POKEMON</h1>
+           <p>Todo lo que necesitas saber sobre tus Pokémon encuéntralo aquí y explota al máximo tu estrategia. GO!</p>
+         </div>
+       </section>
+     </div>
+      <!--Contendor de Tarjetas -->
+      <section id="contentOfCards"></section>
+   </header>
+   <footer id="footer">
+     <div style="font-size: 35px;">
+       <a href=" https://www.instagram.com/pokemongoapp/" target="_blank" class="colorIcono"><i class="fab fa-instagram"></i></a>
+       <a href="https://twitter.com/PokemonGoApp" target="_blank" class="colorIcono"><i class="fab fa-twitter"></i></a>
+       <a href="https://www.facebook.com/PokemonGO/" target="_blank" class="colorIcono"><i class="fab fa-facebook-square"></i></a>
+     </div>
+   </footer>
 
-          
-          <!--Bienvenida -->
-          <section id="welcome">
-            <!--Mensaje -->
-            <div id="boxText" class="boxText1">
-              <img src="img/poke_trainer.png" id="imgTrainer" alt="">
-              <h1>BIENVENIDO ASISTENTE POKEMON</h1>
-              <p>Todo lo que necesitas saber sobre tus Pokémon encuéntralo aquí y explota al máximo tu estrategia. GO!</p>
-          
-            </div>
-    
-           
-            </div>
-          </section>
-                <!--Contendor de Tarjetas -->
-                <section id="contentOfCards"></section>
-    
-      <footer id="footer">
-        <div style="font-size: 35px;">
-          <a href=" https://www.instagram.com/pokemongoapp/" target="_blank" class="colorIcono"><i class="fab fa-instagram"></i></a>
-          <a href="https://twitter.com/PokemonGoApp" target="_blank" class="colorIcono"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.facebook.com/PokemonGO/" target="_blank" class="colorIcono"><i class="fab fa-facebook-square"></i></a>
-        </div>
-    
-    </footer>
-    </div>
-    <script src="main.js" type="module"></script>
+   <script src="main.js" type="module"></script>
   </body>
 </html>
