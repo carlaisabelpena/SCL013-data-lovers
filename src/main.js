@@ -1,6 +1,6 @@
 //Importamos la data de arreglo_Pokemon y las funciones creadas desde el data.js
 import dataArray from './data/pokemon/pokemon.js';
-import {stringType, stringName, stringImg, stringHeight, stringWeight, stringCandyCount,
+import {stringNum, stringType, stringName, stringImg, stringHeight, stringWeight, stringCandyCount,
 stringEgg, stringAvgSpawns, stringSpawnTime, orderData} from './data.js';
 
 
@@ -41,6 +41,7 @@ selectFilterType.addEventListener('change', () => {
    const stringPokeEgg = stringEgg('type', typeDroplist, dataArray.pokemon);
    const stringPokeAvgSpawns = stringAvgSpawns('type', typeDroplist, dataArray.pokemon);
    const stringPokeTime = stringSpawnTime('type', typeDroplist, dataArray.pokemon)
+   const stringPokeNum = stringNum('type', typeDroplist, dataArray.pokemon)
 
   //Contenerdor de las tarjetas
    const divCard = document.getElementById('contentOfCards');
@@ -53,7 +54,8 @@ selectFilterType.addEventListener('change', () => {
    for (let i = 0, len = stringPokeName.length; i < len; i += 1) {
    const card = document.createElement('div');
    card.classList.add('card-style');
-   card.innerHTML = `<img src=' ${stringPokeImg[i]}'>
+   card.innerHTML = `<span class="pokemon-number">${stringPokeNum[i]}</span>
+                    <img src=' ${stringPokeImg[i]}'>
                     <h3>${stringPokeName[i]}</h3>`;
    document.getElementById('contentOfCards').appendChild(card);
   

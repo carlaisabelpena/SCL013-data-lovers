@@ -1,3 +1,11 @@
+const stringNum = (newFilter, currentSelect, dataArray) => {
+  //console.log(dataArray);
+   return dataArray
+   .filter((pokemon) => pokemon[newFilter]
+   .includes(currentSelect))
+   .map((pokemon) => pokemon.num);
+ };
+ 
 //Funcion para Nombres de los Pokemones
 const stringName = (newFilter, currentSelect, dataArray) => {
  //console.log(dataArray);
@@ -81,6 +89,6 @@ const orderData = (data, sortByName, condition) => {
   }
 }
 //Se exportan cada una de las funciones para ser usadas en el main.js
-export { stringType, stringName, stringImg,
+export {stringNum, stringType, stringName, stringImg,
 stringHeight, stringWeight, stringCandyCount,
 stringEgg, stringAvgSpawns,stringSpawnTime, orderData };
