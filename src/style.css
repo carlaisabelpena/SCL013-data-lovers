@@ -34,7 +34,7 @@ p {
   margin-inline-end: 0px;
 }
   
-.searchClass {   
+#searchBar {   
  font-size: 16px;
  font-weight: 500;
  font-family: 'Lato', sans-serif;

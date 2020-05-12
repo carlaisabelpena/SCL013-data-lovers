@@ -6,9 +6,8 @@ stringEgg, stringAvgSpawns, stringSpawnTime, orderData} from './data.js';
 
 //console.log(dataArray.pokemon)
 const dataShows = dataArray.pokemon ;
-const dataArr = Object.values(dataShows)
+//const dataArr = Object.values(dataShows)
 
-console.log(dataArr)
 //Mostramos data en pantalla principal //inconsluso
 /*    for (let i = 0; i < dataArr.length; i++){
     console.log(dataArr[i].name)
