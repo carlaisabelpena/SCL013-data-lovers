@@ -82,11 +82,11 @@ const stringSpawnTime = (newFilter, currentSelect, dataArray) => {
 
 //Funcion para ordernar la data
 const orderData = (data, sortByName, condition) => {
-  if (condition === "aToZ") {
-    return data.sort((a, b) => (a[sortByName] > b[sortByName]) ? 1 : -1);
-  } else {
-    return data.sort((a, b) => (a[sortByName] < b[sortByName]) ? 1 : -1);
-  }
+ if (condition === "aToZ") {
+  return data.sort((a, b) => (a[sortByName] > b[sortByName]) ? 1 : -1);
+ } else {
+  return data.sort((a, b) => (a[sortByName] < b[sortByName]) ? 1 : -1);
+ }
 }
 //Se exportan cada una de las funciones para ser usadas en el main.js
 export {stringNum, stringType, stringName, stringImg,
