@@ -6,17 +6,62 @@ stringEgg, stringAvgSpawns, stringSpawnTime, orderData} from './data.js';
 
 //console.log(dataArray.pokemon)
 const dataShows = dataArray.pokemon ;
-//const dataArr = Object.values(dataShows)
+const dataArr = Object.values(dataShows)
 
-//Mostramos data en pantalla principal //inconsluso
-/*    for (let i = 0; i < dataArr.length; i++){
-    console.log(dataArr[i].name)
+ const divCard = document.getElementById('contentOfCards');
+ while (divCard.hasChildNodes()) {
+ divCard.removeChild(divCard.firstChild);
+ }
+ document.getElementById('root').innerHTML = '';
+
+ //Mostramos data en pantalla principal
+ for (let i = 0; i < dataArr.length; i++){
+ const root = document.createElement('div');
+ root.classList.add('card-style');
+ root.innerHTML +=`<h3>${dataArr[i].num}</h3>
+                  <img src=' ${dataArr[i].img}'>
+                  <h3>${dataArr[i].name}</h3>`;
+ document.getElementById('contentOfCards').appendChild(root);
+  
+ //Se realiza div para Modal
+ const modal = document.createElement('div');
+ modal.classList.add('modal');
+ document.getElementById('contentOfCards').appendChild(modal);
+  
+ //Contenido del Modal //lo que va dentro de la tarjeta grande //Por concluir falta agregar img de debilidades y fortalezas
+ const modalContent = document.createElement('div');
+ modalContent.classList.add('modal-content');
+ modalContent.innerHTML = `<div class='pokemon-description'> 
+                          <img class='modal-img' src='${dataArr[i].img}'>
+                          <h3>${dataArr[i].name}</h3>
+                          <p><span class='modal-p'>Altura: </span>${dataArr[i].height}</p>
+                          <p><span class='modal-p'>Peso: </span>${dataArr[i].weight}</p>
+                          <p><span class='modal-p'>Candy Count: </span>${dataArr[i].candy_count}</p>
+                          <p><span class='modal-p'>EGG: </span>${dataArr[i].egg}</p>
+                          <p><span class='modal-p'>Avg Spawns: </span>${dataArr[i].avg_spawns}</p>
+                          <p><span class='modal-p'>Time: </span>${dataArr[i].spawn_time}</p>
+                          <p><span class='modal-p'>TIPO: </span>${dataArr[i].type}</p> 
+                          </div>`;
+ modal.appendChild(modalContent);
+  
+ //X de la tarjeta grande (modal)
+ const close = document.createElement('span');
+ close.classList.add('close');
+ close.innerHTML = '&times;'; // Cierre de la tarjeta modal
+ modalContent.insertBefore(close, modalContent.childNodes[0]);
+   
+ //General Función para abrir la tarjeta
+ root.addEventListener('click', () => {
+ modal.style.display = 'block';
+ });
+    
+ //General Función para cerrar tarjeta
+ close.addEventListener('click', () => {
+ modal.style.display = 'none';
+ });
+ //console.log(modalContent)
 }
-    const root = document.getElementById('contentOfCards');
-    for (let i = 0; i < dataArr.length; i++) {
-    root.innerHTML += `<img src="${dataArr[i].img}" alt="">`
-}
-*/
+
 //Tipo de Pokemones
 const selectFilterType = document.getElementById('selectType');
   
@@ -261,7 +306,7 @@ document.getElementById("selectOrder").addEventListener('change',() => {
     document.getElementById('selectWeak').value = ''; 
     document.getElementById('searchBar').value = '';
 
-const orderName = document.getElementById("selectOrder").value;
+ const orderName = document.getElementById("selectOrder").value;
     let orderPokeName = orderData(dataShows, "name", orderName);
 
     //Contenerdor de las tarjetas
