@@ -9,16 +9,16 @@
 * [5. Proceso de diseño](#5-proceso-de-diseño)
 * [6. Diseño de interfaz](#6-diseño-de-interfaz)
 * [7. Historias de usuario](#7-historias-de-usuario)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [8. Testeos de Usabilidad](#8-testeos-de-usabilidad)
 * [9. Checklist](#9-checklist)
 
 ***
 
-## 1. :mag: Preámbulo
+## 1. Preámbulo :mag:
 
 PokémonGo es un juego internacional de realidad aumentada para dispositivos inteligentes , ya que está combinado con el mundo real, por ejemplo, en sus locaciones. Esta app está disponible para dispositivos iOs y Android, la cual ha sido nombrada "el mejor juego para móviles" por Game Developers Choice Awards, por lo que tiene millones de jugadores en el mundo, donde todos buscan desarrollarse como los mejores Maestros Pokémon, capturar y entrenar a la mayor cantidad de ellos es lo primordial, para así ganar todas las batallas a enfrentar.
 
-## 2. :pencil: Resumen del proyecto
+## 2. Resumen del proyecto :pencil:
 
 Se desarrolló una página web con diseño responsive también, donde es posible ver y filtrar datos y características importantes de cada personajes disponible en Pokémon Go, para así facilitar el conocimiento y uso estratégico de los jugadores. Esto a través de la visualización  de datos disponibles como : 
 - Cada Pokémon tiene características, las cuales son únicas, que son determinantes a la hora de tomar decisiones por los juadores, estas características son tipo, debilidad, peso,multiplicador, cantidad de dulces, etc.
@@ -27,13 +27,13 @@ Se desarrolló una página web con diseño responsive también, donde es posible
 - Todas las criaturas pokémon se alimentan de caramelos y un maestro Pokémon tiene que saber cuántos necesita para que cada uno de los pokémon que posee puedan evolucionar.
 
 
-## 3. :pencil: Definición del Producto
+## 3. Definición del Producto :pencil:
 
 Asistente Pokémon es una aplicación,disponible en página web y mobile (responsive), cuya función y objetivo principal es visibilizar toda la carta disponible de todos los personajes Pokémon de la primera generación para que todos los maestros Pokémon puedan usarlos de la manera más estratégica.
 Podrás desarrollarte de la mejor manera como maestro Pokémon y ganar todas tu batallas!
 
 
-## 4. :busts_in_silhouette: Enfoque de Usuario
+## 4. Enfoque de Usuario :busts_in_silhouette:
 
 Nuestros pricipales usuarios serán persona sin límites de edad que busquen tanto, como un rato de distracción, como también desarrollar al máximo su habilidad en el juego, entonces serán:
 
@@ -53,7 +53,7 @@ Obtener toda la información disponible de todos los pokémon de la primera gene
 En cualquier momento y lugar, necesitas sólo un tiempo libre y acceso a un computador, tablet o smartphone.
 
 
-## 5. :pencil2: Proceso de Diseño (Prototipado)
+## 5. Proceso de Diseño (Prototipado) :pencil2:
 
 
 ⦁	Boceto de prototipo de baja fidelidad en lápiz y papel:
@@ -84,7 +84,7 @@ Se utilizó [Figma] (https://www.figma.com/file/y7d2cZ3HjnDb3vZZv6SQ9P/Asistente
 5.1 Iteración del Prototipo: Una vez que montamos nuestro prototipo nuestra primera iteración fue mostrada a nuestras compañeras de Common core donde nos hicieron alcances de cosas visuales como: tamaño de header, por temas de scroll.
 
 
-## 6. :computer: Diseño de Interfaz
+## 6. Diseño de Interfaz :computer:
 
 Ya con la selección del contenido , seleccionamos los aspectos visuales que tendrá nuestra web:
 
@@ -98,7 +98,7 @@ Ya con la selección del contenido , seleccionamos los aspectos visuales que ten
 
 ![Screenshotpaleta](img_readme/paleta.jpg)
 
-## 7. :busts_in_silhouette: Historias de Usuario
+## 7. Historias de Usuario :busts_in_silhouette:
 
 Para definir cada Historia de Usuario (H.U.), utilizamos 3 parámetros:
 
@@ -112,7 +112,7 @@ Para: Tener en cuenta cual elegir por Orden de nombre en caso de no recordar exa
 Necesito: Conocer las evoluciones de los Pokemones.
 Para: Tener en cuenta cuantos caramelos se requieren para que el pokemon alcance la evolución.
 
-⦁	Ignacio Díaz - Jugador Frecuente de PokémonGo:
+⦁	Matias Navarro - Jugador Frecuente de PokémonGo:
 Necesito: Encontrar facilmente el pokémon que busco
 Para: Ver sus características.
 
@@ -120,5 +120,16 @@ Para: Ver sus características.
 Necesito: Conocer las debilidades de los Pokémon.
 Para: Poder ganarles a mis oponentes.
 
+## 8. Testeos de Usabilidad :busts_in_silhouette:
 
+Ya finalizada nuestra web, decidimos comenzar nuestros Testeos de Usabilidad. Para esto conseguimos a dos jugadores que cumplen a cabalidad con nuestros requisitos de usuario y les hicimos llegar la invitación, a lo que ellos aceptaron. Diseñamos la  siguiente pauta:
 
+1) Primero que todo saludar a nuestro usuario, agradecerle de antemano su disposición y colaboración a participar en nuestro proyecto.  Le hacemos saber que no queremos testear cuándo sabe de Pokémon Go, sino que necesitamos un feedback sobre nuestra web y cómo la percibe él, donde no hay respuestas buenas y malas, sólo su apreciación y experiencia.
+
+2) Le haremos una breve introducción sobre nuestra web, le señalaremos su uso: "Nuestra web es Asistente Pokémon, somos una página donde encontrarás todos los datos de los Pokémon disponibles en la región de Kanto"
+
+3) Luego, le pediremos a nuestro usuario pequeñas tareas en donde veremos qué tan complejo se le hacen cumplirlas, para así evidenciar la experiencia de nuestro usuario, por ejemplo: "Cómo buscarías los Pokémon de tipo agua?". Entonces, por medio de la observación de sus interacciones es que anotaremos lo que él vaya haciendo, y así tendremos una idea concreta de cuan predecible y amigable es nuestra web.
+
+4) Posterior a todo esto, le pediremos si tiene alguna sugerencia que hacernos, algo que quisiera acotar, agregar, como también si es que considera que algo está demás.
+
+5) Finalizamos agradeciéndole nuevamente por su tiempo y gentileza, le recalcamos que todas sus opiniones y feedback es de gran ayuda.
