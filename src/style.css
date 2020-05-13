@@ -135,10 +135,13 @@ p {
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
   color: #000000;
 }
-
-
-
-
+.modal-img {
+  width: 200px;
+  height: 200px;
+}
+.resistant img{
+  width: 2em;
+}
   /*Texto de las descripciones en el modal */
 .pokemon-description {
   transition: all .40 ease;
