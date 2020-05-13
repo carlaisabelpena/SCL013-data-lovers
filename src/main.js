@@ -13,7 +13,7 @@ alternLogoMenu.addEventListener('click', () => {
 const weaknesses = (arrayType) => {
   let imgEachPokemon = '';
   arrayType.forEach((weaknessesPokemon) => {
-    imgEachPokemon += `<img src="./img/types-pokemon/${weaknessesPokemon}.png" alt="weaknesses"/>`;
+    imgEachPokemon += `<img src="./img/typepokemon/${weaknessesPokemon}.png" alt="weaknesses"/>`;
   });
   return imgEachPokemon;
 };
