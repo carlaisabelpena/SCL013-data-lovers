@@ -47,8 +47,9 @@ for (let i = 0; i < dataArr.length; i++){
  const modalContent = document.createElement('div');
  modalContent.classList.add('modal-content');
  modalContent.innerHTML = `<div class='pokemon-description'> 
+ <h3>${dataArr[i].name}</h3>
                           <img class='modal-img' src='${dataArr[i].img}'>
-                          <h3>${dataArr[i].name}</h3>
+                     
                           <p><span class='modal-p'>Altura: </span>${dataArr[i].height}</p>
                           <p><span class='modal-p'>Peso: </span>${dataArr[i].weight}</p>
                           <p><span class='modal-p'>Candy Count: </span>${dataArr[i].candy_count}</p>
@@ -128,8 +129,9 @@ selectFilterType.addEventListener('change', () => {
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
    modalContent.innerHTML = `<div class='pokemon-description'> 
+   <h3>${stringPokeName[i]}</h3>
                             <img class='modal-img' src='${stringPokeImg[i]}'>
-                            <h3>${stringPokeName[i]}</h3>
+                           
                             <p><span class='modal-p'>Altura: </span>${stringPokeHeight[i]}</p>
                             <p><span class='modal-p'>Peso: </span>${stringPokeWeight[i]}</p>
                             <p><span class='modal-p'>Candy Count: </span>${stringPokeCandyCount[i]}</p>
@@ -209,8 +211,9 @@ selectFilterByWeak.addEventListener('change', () => {
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
    modalContent.innerHTML = `<div class='pokemon-description'> 
+   <h3>${stringPokeName[i]}</h3>
                             <img class='modal-img' src='${stringPokeImg[i]}'>
-                            <h3>${stringPokeName[i]}</h3>
+                          
                             <p><span class='modal-p'>Altura: </span>${stringPokeHeight[i]}</p>
                             <p><span class='modal-p'>Peso: </span>${stringPokeWeight[i]}</p>
                             <p><span class='modal-p'>Candy Count: </span>${stringPokeCandyCount[i]}</p>
@@ -290,8 +293,9 @@ document.getElementById('searchBar').addEventListener('keydown', () => {
     const modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
     modalContent.innerHTML = `<div class='pokemon-description'> 
+    <h3>${stringPokeName[i]}</h3>
                               <img class='modal-img' src='${stringPokeImg[i]}'>
-                              <h3>${stringPokeName[i]}</h3>
+                        
                               <p><span class='modal-p'>Altura: </span>${stringPokeHeight[i]}</p>
                               <p><span class='modal-p'>Peso: </span>${stringPokeWeight[i]}</p>
                               <p><span class='modal-p'>Candy Count: </span>${stringPokeCandyCount[i]}</p>
@@ -356,8 +360,9 @@ document.getElementById("selectOrder").addEventListener('change',() => {
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
    modalContent.innerHTML = `<div class='pokemon-description'> 
+   <h3>${orderPokeName[i].name}</h3>
                            <img class='modal-img' src='${orderPokeName[i].img}'>
-                           <h3>${orderPokeName[i].name}</h3>
+                        
                            <p><span class='modal-p'>Altura: </span>${orderPokeName[i].height}</p>
                            <p><span class='modal-p'>Peso: </span>${orderPokeName[i].weight}</p>
                            <p><span class='modal-p'>Candy Count: </span>${orderPokeName[i].candy_count}</p>
