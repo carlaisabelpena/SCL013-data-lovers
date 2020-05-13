@@ -88,7 +88,14 @@ const orderData = (data, sortByName, condition) => {
   return data.sort((a, b) => (a[sortByName] < b[sortByName]) ? 1 : -1);
  }
 }
+//Función para debilidades
+const stringWaknesses = (newFilter, currentSelect, dataArray) => {
+  return dataArray
+  .filter((pokemon) => pokemon[newFilter]
+  .includes(currentSelect))
+  .map((pokemon) => pokemon.weaknesses);
+};
 //Se exportan cada una de las funciones para ser usadas en el main.js
 export {stringNum, stringType, stringName, stringImg,
 stringHeight, stringWeight, stringCandyCount,
-stringEgg, stringAvgSpawns,stringSpawnTime, orderData };
+stringEgg, stringAvgSpawns,stringSpawnTime, orderData, stringWaknesses };
