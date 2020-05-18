@@ -32,6 +32,8 @@ p {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
 }
 #searchBar {   
  font-size: 16px;
@@ -119,6 +121,7 @@ p {
   background-color: rgb(0,0,0);
   background-color: rgba(0, 0, 0, 0.4);
   font-family: 'Lato', sans-serif;
+ 
 }
 /* Modal Content */
 .modal-content {
@@ -131,7 +134,7 @@ p {
   border-radius: 38px 38px 38px 38px;
   -moz-border-radius: 38px 38px 38px 38px;
   -webkit-border-radius: 38px 38px 38px 38px;
-  border: 2px solid #0a4270;
+  border: 5px solid #0a4270;
   box-shadow: 0 4px 8px 0 rgba(27, 27, 27, 0.2), 0 6px 20px 0 rgba(27, 27, 27, 0.19);
   color: #424242;
 }
@@ -154,6 +157,8 @@ p {
   text-align: center;
   color: #424242;
   margin: auto;
+  font-family: 'Lato', sans-serif;
+ 
 }
   /*Texto de las descripciones en el modal */
 .pokemon-description {
@@ -162,10 +167,14 @@ p {
   font-family: 'Lato', sans-serif;
   color: #424242;
   padding: 0% 5% 2% 5%;
+  font-weight: 600;
+
 }
 .pokemon-description p {
   text-align: left;
   margin:0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
 }
 
 .pokemon-number {
@@ -259,8 +268,10 @@ h5 {
   font-size: 1.3em;
   text-align: center;
   line-height : 30px;
-  font-weight: bold;
+  font-weight: bold 700;
   color: #2C2C2C;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
 }
   
 @media screen and (max-width: 980px) {

@@ -10,7 +10,8 @@
 * [6. Diseño de interfaz](#6-diseño-de-interfaz)
 * [7. Historias de usuario](#7-historias-de-usuario)
 * [8. Testeos de Usabilidad](#8-testeos-de-usabilidad)
-* [9. Checklist](#9-checklist)
+* [9. Feedback testeo y Aspectos](#9-feedback-testeo-y-aspectos)
+* [10.Conclusiones](#10-conclusiones)
 
 ***
 
@@ -133,3 +134,39 @@ Ya finalizada nuestra web, decidimos comenzar nuestros Testeos de Usabilidad. Pa
 4) Posterior a todo esto, le pediremos si tiene alguna sugerencia que hacernos, algo que quisiera acotar, agregar, como también si es que considera que algo está demás.
 
 5) Finalizamos agradeciéndole nuevamente por su tiempo y gentileza, le recalcamos que todas sus opiniones y feedback es de gran ayuda.
+
+° VIDEO TESTEO:
+
+https://www.loom.com/share/c2634005828e4153b1cc7043f230caf6
+
+## 9. Feedback testeo y Aspectos :busts_in_silhouette:
+
+En nuestro testeo grabado de usabilidad, el feedback según los diferentes aspectos fue el siguiente:
+
+9.1) Aspectos positivos:
+
+⦁ Recalcó numerosas veces que los colores eran alegres y vibrantes pero que no saturaban la visión ni generaban estrés.
+
+⦁ El contenido de la página hacía que su navegación fuera rápida, ya que no contaba con un exceso de información innecesaria, sino que con la precisa para la búsqueda del usuario.
+
+⦁ Otro aspecto en la fluidez de la búsqueda fue la barra de search, ya que en menos clicks se puede llegar a la información del pokémon que se requiere.
+
+⦁ Los modales individuales de los pokémon también fueron bien recibidos, ya que al encontrarse los íconos de las debilidades quedaba clarísimo de inmediato.
+
+9.2) Aspectos a mejorar:
+
+⦁ Cuando se desplegaba el modal individual de cada pokémon el botón de cerrar se encontraba fuera de éste.
+
+Solución: Lo arreglamos mediante css, fue algo que no pudimos llegar antes del testeo, pero posterior a éste lo logramos arreglar.
+
+⦁ Las letras de las tarjetas en la descripción de cada categoría eran muy delgadas.
+
+Solución: Seguimos con la misma fuente, adelgazamos las que teníamos en bold y agrandamos las de la descripción, haciendo estos cambios resultaron mucho más legibles.
+
+## 10. Conclusiones :clipboard:
+
+⦁ Al finalizar nuestro proyecto logramos cumplir con casi todos los requerimientos, es así que bajo nuestro criterio y el requerido, es que podemos sostener dicha afirmación.
+
+⦁ Nos hubiera gustado mostrar más testeos, pero por un asunto técnico de nuestras computadoras, se nos dificultó, así que decidimos dejar solamente el que logramos realizar.
+
+⦁ Fuimos mejorando cada vez nuestro proyecto, según los requerimientos de los usuarios y también bajo nuestro criterio, y nuestra versión final cumplió con los requerimiendo de los usuario y nos dejó satisfechas en cuanto a lo visual y lo técnico.
