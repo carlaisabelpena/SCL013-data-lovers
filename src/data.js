@@ -1,3 +1,7 @@
+import dataArray from './data/pokemon/pokemon.js';
+
+const pokemonDatos = dataArray.pokemon;
+
 const stringNum = (newFilter, currentSelect, dataArray) => {
   //console.log(dataArray);
    return dataArray
@@ -7,9 +11,8 @@ const stringNum = (newFilter, currentSelect, dataArray) => {
  };
  
 //Funcion para Nombres de los Pokemones
-const stringName = (newFilter, currentSelect, dataArray) => {
- //console.log(dataArray);
-  return dataArray
+const stringName = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.name);
