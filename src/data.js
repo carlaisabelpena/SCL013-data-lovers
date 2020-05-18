@@ -2,9 +2,9 @@ import dataArray from './data/pokemon/pokemon.js';
 
 const pokemonDatos = dataArray.pokemon;
 
-const stringNum = (newFilter, currentSelect, dataArray) => {
+const stringNum = (newFilter, currentSelect) => {
   //console.log(dataArray);
-   return dataArray
+   return pokemonDatos
    .filter((pokemon) => pokemon[newFilter]
    .includes(currentSelect))
    .map((pokemon) => pokemon.num);
@@ -19,40 +19,40 @@ const stringName = (newFilter, currentSelect) => {
 };
 
 //Función para tipo de los Pokemones
-const stringType = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringType = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.type);
 };
 
 //Función para Img
-const stringImg = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringImg = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.img);
 };
 
 //Función para altura de los Pokemones
-const stringHeight = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringHeight = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.height);
 };
 
 //Función para el Peso de los Pokemones
-const stringWeight = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringWeight = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.weight);
 };
 
 // Función para los caramelos de los pokemones
-const stringCandyCount = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringCandyCount = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.candy_count)
@@ -60,24 +60,24 @@ const stringCandyCount = (newFilter, currentSelect, dataArray) => {
 };
 
 // Función para los Huevos si posee o no
-const stringEgg = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringEgg = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.egg).map((x) => x !== 'Not in Eggs' ? x : 'o km');
 };
 
 //Función puntos de aparicion
-const stringAvgSpawns = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringAvgSpawns = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.avg_spawns);
 };
 
 // Función para el tiempo de aparición
-const stringSpawnTime = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringSpawnTime = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.spawn_time);
@@ -92,12 +92,13 @@ const orderData = (data, sortByName, condition) => {
  }
 }
 //Función para debilidades
-const stringWaknesses = (newFilter, currentSelect, dataArray) => {
-  return dataArray
+const stringWaknesses = (newFilter, currentSelect) => {
+  return pokemonDatos
   .filter((pokemon) => pokemon[newFilter]
   .includes(currentSelect))
   .map((pokemon) => pokemon.weaknesses);
 };
+
 //Se exportan cada una de las funciones para ser usadas en el main.js
 export {stringNum, stringType, stringName, stringImg,
 stringHeight, stringWeight, stringCandyCount,
