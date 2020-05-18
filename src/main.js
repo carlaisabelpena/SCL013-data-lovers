@@ -46,11 +46,12 @@ for (let i = 0; i < dataArr.length; i++){
  //Contenido del Modal //lo que va dentro de la tarjeta grande //Por concluir falta agregar img de debilidades y fortalezas
  const modalContent = document.createElement('div');
  modalContent.classList.add('modal-content');
- modalContent.innerHTML = `<div class='pokemon-description'> 
+ modalContent.innerHTML = `<div class='imgType'>${weaknesses(dataArr[i].type)}</div>
+ <div class='pokemon-description'> 
                           <h5>${dataArr[i].name}</h5>
                           <img class='modal-img' src='${dataArr[i].img}'>
                           <p><span class='modal-p'>Height: </span>${dataArr[i].height}</p>
-                          <p><span class='modal-p'>weight: </span>${dataArr[i].weight}</p>
+                          <p><span class='modal-p'>Weight: </span>${dataArr[i].weight}</p>
                           <p><span class='modal-p'>Candy Count: </span>${dataArr[i].candy_count}</p>
                           <p><span class='modal-p'>Egg: </span>${dataArr[i].egg}</p>
                           <p><span class='modal-p'>Avg Spawns: </span>${dataArr[i].avg_spawns}</p>
@@ -86,8 +87,9 @@ selectFilterType.addEventListener('change', () => {
    
   //Resetea los elementos a su valor original  
   document.getElementById('selectWeak').value = ''; 
-  document.getElementById('searchBar').value = ''; 
- 
+  document.getElementById('searchBar').value = '';  
+  document.getElementById('selectOrder').value = '';
+  
   // Valor del droplist x tipo de Pokemon
   const typeDroplist = document.getElementById('selectType').value; 
   
@@ -128,16 +130,16 @@ selectFilterType.addEventListener('change', () => {
    //Contenido del Modal //lo que va dentro de la tarjeta grande //Por concluir falta agregar img de debilidades y fortalezas
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
-   modalContent.innerHTML = `<div class='pokemon-description'> 
+   modalContent.innerHTML = `<div class='imgType'>${weaknesses(stringPokeType[i])}</div>
+   <div class='pokemon-description'> 
                             <h5>${stringPokeName[i]}</h5>
                             <img class='modal-img' src='${stringPokeImg[i]}'>
                             <p><span class='modal-p'>Height: </span>${stringPokeHeight[i]}</p>
-                            <p><span class='modal-p'>weight: </span>${stringPokeWeight[i]}</p>
+                            <p><span class='modal-p'>Weight: </span>${stringPokeWeight[i]}</p>
                             <p><span class='modal-p'>Candy Count: </span>${stringPokeCandyCount[i]}</p>
                             <p><span class='modal-p'>Egg: </span>${stringPokeEgg[i]}</p>
                             <p><span class='modal-p'>Avg Spawns: </span>${stringPokeAvgSpawns[i]}</p>
                             <p><span class='modal-p'>Time: </span>${stringPokeTime[i]}</p>
-                            <p><span class='modal-p'>TIPO: </span>${weaknesses(stringPokeType[i])}</p> 
                            <p><span class='resistant-p'>Weaknesses: </span></p> 
                             <div class='resistant'>${weaknesses(stringPokeWeak[i])}</div> 
                             </div>`;
@@ -169,7 +171,8 @@ selectFilterByWeak.addEventListener('change', () => {
   //Resetea los elementos a su valor original
   document.getElementById('selectType').value = ''; 
   document.getElementById('searchBar').value = '';
-  
+  document.getElementById('selectOrder').value = '';
+
   const weakeDroplist = document.getElementById('selectWeak').value; // Valor del droplist de tipo
 
   // Todas las variables que aparecen en las tarjetas de cada Pokemón
@@ -209,16 +212,16 @@ selectFilterByWeak.addEventListener('change', () => {
    //Contenido del Modal //lo que va dentro de la tarjeta grande //Por concluir falta agregar img de debilidades y fortalezas
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
-   modalContent.innerHTML = `<div class='pokemon-description'> 
+   modalContent.innerHTML = `<div class='imgType'>${weaknesses(stringPokeType[i])}</div>
+   <div class='pokemon-description'> 
                             <h5>${stringPokeName[i]}</h5>
                             <img class='modal-img' src='${stringPokeImg[i]}'>
                             <p><span class='modal-p'>Height: </span>${stringPokeHeight[i]}</p>
-                            <p><span class='modal-p'>weight: </span>${stringPokeWeight[i]}</p>
+                            <p><span class='modal-p'>Weight: </span>${stringPokeWeight[i]}</p>
                             <p><span class='modal-p'>Candy Count: </span>${stringPokeCandyCount[i]}</p>
                             <p><span class='modal-p'>EGG: </span>${stringPokeEgg[i]}</p>
                             <p><span class='modal-p'>Avg Spawns: </span>${stringPokeAvgSpawns[i]}</p>
-                            <p><span class='modal-p'>Time: </span>${stringPokeTime[i]}</p>
-                            <p><span class='modal-p'>TIPO: </span>${weaknesses(stringPokeType[i])}</p> 
+                            <p><span class='modal-p'>Time: </span>${stringPokeTime[i]}</p> 
                            <p><span class='resistant-p'>Weaknesses: </span></p> 
                             <div class='resistant'>${weaknesses(stringPokeWeak[i])}</div>
                             </div>`;
@@ -291,16 +294,16 @@ document.getElementById('searchBar').addEventListener('keydown', () => {
     //Contenido del Modal //lo que va dentro de la tarjeta grande //Por concluir falta agregar img de debilidades y fortalezas
     const modalContent = document.createElement('div');
     modalContent.classList.add('modal-content');
-    modalContent.innerHTML = `<div class='pokemon-description'> 
-                              <h3>${stringPokeName[i]}</h3>
+    modalContent.innerHTML = `<div class='imgType'>${weaknesses(stringPokeType[i])}</div>
+    <div class='pokemon-description'> 
+                              <h5>${stringPokeName[i]}</h5>
                               <img class='modal-img' src='${stringPokeImg[i]}'>
                               <p><span class='modal-p'>Height: </span>${stringPokeHeight[i]}</p>
-                              <p><span class='modal-p'>weight: </span>${stringPokeWeight[i]}</p>
+                              <p><span class='modal-p'>Weight: </span>${stringPokeWeight[i]}</p>
                               <p><span class='modal-p'>Candy Count: </span>${stringPokeCandyCount[i]}</p>
                               <p><span class='modal-p'>EGG: </span>${stringPokeEgg[i]}</p>
                               <p><span class='modal-p'>Avg Spawns: </span>${stringPokeAvgSpawns[i]}</p>
                               <p><span class='modal-p'>Time: </span>${stringPokeTime[i]}</p>
-                              <p><span class='modal-p'>TIPO: </span>${weaknesses(stringPokeType[i])}</p> 
                               <p><span class='resistant-p'>Weaknesses: </span></p> 
                               <div class='resistant'>${weaknesses(stringPokeWeak[i])}</div>
                               </div>`;
@@ -358,16 +361,17 @@ document.getElementById("selectOrder").addEventListener('change',() => {
    //Contenido del Modal //lo que va dentro de la tarjeta grande //Por concluir falta agregar img de debilidades y fortalezas
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
-   modalContent.innerHTML = `<div class='pokemon-description'> 
+   modalContent.innerHTML = `<div class='imgType'>${weaknesses(orderPokeName[i].type)}</div>
+   <div class='pokemon-description'> 
                            <h5>${orderPokeName[i].name}</h5>
                            <img class='modal-img' src='${orderPokeName[i].img}'>
                            <p><span class='modal-p'>Height: </span>${orderPokeName[i].height}</p>
-                           <p><span class='modal-p'>weight: </span>${orderPokeName[i].weight}</p>
+                           <p><span class='modal-p'>Weight: </span>${orderPokeName[i].weight}</p>
                            <p><span class='modal-p'>Candy Count: </span>${orderPokeName[i].candy_count}</p>
                            <p><span class='modal-p'>EGG: </span>${orderPokeName[i].egg}</p>
                            <p><span class='modal-p'>Avg Spawns: </span>${orderPokeName[i].avg_spawns}</p>
                            <p><span class='modal-p'>Time: </span>${orderPokeName[i].spawn_time}</p>
-                           <p><span class='modal-p'>TIPO: </span>${weaknesses(orderPokeName[i].type)}</p> 
+                           <p><span class='resistant-p'>Weaknesses: </span></p> 
                            <div class='resistant'>${weaknesses(orderPokeName[i].weaknesses)}</div>
                            </div>`;
    modal.appendChild(modalContent);
