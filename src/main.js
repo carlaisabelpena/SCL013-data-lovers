@@ -18,7 +18,6 @@ const weaknesses = (arrayType) => {
   return imgEachPokemon;
 };
  
-
 //console.log(dataArray.pokemon)
 const dataShows = dataArray.pokemon ;
 const dataArr = Object.values(dataShows)
