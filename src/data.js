@@ -2,6 +2,7 @@ import dataArray from './data/pokemon/pokemon.js';
 
 const pokemonDatos = dataArray.pokemon;
 
+//Funcion para los numeros de los Pokemones
 const stringNum = (newFilter, currentSelect) => {
   //console.log(dataArray);
    return pokemonDatos
