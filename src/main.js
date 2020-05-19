@@ -9,7 +9,7 @@ alternLogoMenu.addEventListener('click', () => {
   window.location.reload();
 });
 
-//Debilidades en imagenes para las tarjetas
+//Debilidades en imagenes para los modales
 const weaknesses = (arrayType) => {
   let imgEachPokemon = '';
   arrayType.forEach((weaknessesPokemon) => {
@@ -18,7 +18,7 @@ const weaknesses = (arrayType) => {
   return imgEachPokemon;
 };
  
- 
+
 //console.log(dataArray.pokemon)
 const dataShows = dataArray.pokemon ;
 const dataArr = Object.values(dataShows)
@@ -47,7 +47,7 @@ for (let i = 0; i < dataArr.length; i++){
  const modalContent = document.createElement('div');
  modalContent.classList.add('modal-content');
  modalContent.innerHTML = `<div class='imgType'>${weaknesses(dataArr[i].type)}</div>
- <div class='pokemon-description'> 
+                          <div class='pokemon-description'> 
                           <h5>${dataArr[i].name}</h5>
                           <img class='modal-img' src='${dataArr[i].img}'>
                           <p><span class='modal-p'>Height: </span>${dataArr[i].height}</p>
@@ -131,7 +131,7 @@ selectFilterType.addEventListener('change', () => {
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
    modalContent.innerHTML = `<div class='imgType'>${weaknesses(stringPokeType[i])}</div>
-   <div class='pokemon-description'> 
+                            <div class='pokemon-description'> 
                             <h5>${stringPokeName[i]}</h5>
                             <img class='modal-img' src='${stringPokeImg[i]}'>
                             <p><span class='modal-p'>Height: </span>${stringPokeHeight[i]}</p>
@@ -140,7 +140,7 @@ selectFilterType.addEventListener('change', () => {
                             <p><span class='modal-p'>Egg: </span>${stringPokeEgg[i]}</p>
                             <p><span class='modal-p'>Avg Spawns: </span>${stringPokeAvgSpawns[i]}</p>
                             <p><span class='modal-p'>Time: </span>${stringPokeTime[i]}</p>
-                           <p><span class='resistant-p'>Weaknesses: </span></p> 
+                            <p><span class='resistant-p'>Weaknesses: </span></p> 
                             <div class='resistant'>${weaknesses(stringPokeWeak[i])}</div> 
                             </div>`;
    modal.appendChild(modalContent);
@@ -213,7 +213,7 @@ selectFilterByWeak.addEventListener('change', () => {
    const modalContent = document.createElement('div');
    modalContent.classList.add('modal-content');
    modalContent.innerHTML = `<div class='imgType'>${weaknesses(stringPokeType[i])}</div>
-   <div class='pokemon-description'> 
+                            <div class='pokemon-description'> 
                             <h5>${stringPokeName[i]}</h5>
                             <img class='modal-img' src='${stringPokeImg[i]}'>
                             <p><span class='modal-p'>Height: </span>${stringPokeHeight[i]}</p>

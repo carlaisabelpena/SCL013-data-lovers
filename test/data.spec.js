@@ -1,7 +1,4 @@
-// importamos la función `example`
 import {stringName, stringImg, stringNum, stringType, stringHeight, stringWeight, stringCandyCount, stringWaknesses, orderData} from '../src/data.js';
-// import POKEMON from '../src/data/pokemon/pokemon.js';
-
 
 describe('stringName', () => {
   test("debería ser una función", () => {
@@ -88,272 +85,37 @@ describe('orderData', () => {
     expect(typeof orderData).toBe('function');
   });
 });
-const untidyPoke = [{
-  "id": 7,
-  "num": "007",
-  "name": "Squirtle",
-  "img": "http://www.serebii.net/pokemongo/pokemon/007.png",
-  "type": [
-    "Water"
-  ],
-  "height": "0.51 m",
-  "weight": "9.0 kg",
-  "candy": "Squirtle Candy",
-  "candy_count": 25,
-  "egg": "2 km",
-  "spawn_chance": 0.58,
-  "avg_spawns": 58,
-  "spawn_time": "04:25",
-  "multipliers": [2.1],
-  "weaknesses": [
-    "Electric",
-    "Grass"
-  ],
-  "next_evolution": [{
-    "num": "008",
-    "name": "Wartortle"
-  }, {
-    "num": "009",
-    "name": "Blastoise"
-  }]
+const untidyData = [{
+  "name": "Charmander" 
 }, {
-  "id": 8,
-  "num": "008",
-  "name": "Wartortle",
-  "img": "http://www.serebii.net/pokemongo/pokemon/008.png",
-  "type": [
-    "Water"
-  ],
-  "height": "0.99 m",
-  "weight": "22.5 kg",
-  "candy": "Squirtle Candy",
-  "candy_count": 100,
-  "egg": "Not in Eggs",
-  "spawn_chance": 0.034,
-  "avg_spawns": 3.4,
-  "spawn_time": "07:02",
-  "multipliers": [1.4],
-  "weaknesses": [
-    "Electric",
-    "Grass"
-  ],
-  "prev_evolution": [{
-    "num": "007",
-    "name": "Squirtle"
-  }],
-  "next_evolution": [{
-    "num": "009",
-    "name": "Blastoise"
-  }]
-}, {
-  "id": 9,
-  "num": "009",
-  "name": "Blastoise",
-  "img": "http://www.serebii.net/pokemongo/pokemon/009.png",
-  "type": [
-    "Water"
-  ],
-  "height": "1.60 m",
-  "weight": "85.5 kg",
-  "candy": "Squirtle Candy",
-  "egg": "Not in Eggs",
-  "spawn_chance": 0.0067,
-  "avg_spawns": 0.67,
-  "spawn_time": "00:06",
-  "multipliers": null,
-  "weaknesses": [
-    "Electric",
-    "Grass"
-  ],
-  "prev_evolution": [{
-    "num": "007",
-    "name": "Squirtle"
-  }, {
-    "num": "008",
-    "name": "Wartortle"
-  }]
+  "name": "Venusaur"
+ }, {
+  "name": "Bulbasaur"
 }];
-const tidyPoke = [{
-    "id": 9,
-    "num": "009",
-    "name": "Blastoise",
-    "img": "http://www.serebii.net/pokemongo/pokemon/009.png",
-    "type": [
-      "Water"
-    ],
-    "height": "1.60 m",
-    "weight": "85.5 kg",
-    "candy": "Squirtle Candy",
-    "egg": "Not in Eggs",
-    "spawn_chance": 0.0067,
-    "avg_spawns": 0.67,
-    "spawn_time": "00:06",
-    "multipliers": null,
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
-    "prev_evolution": [{
-      "num": "007",
-      "name": "Squirtle"
-    }, {
-      "num": "008",
-      "name": "Wartortle"
-    }]
-  },
-  {
-    "id": 7,
-    "num": "007",
-    "name": "Squirtle",
-    "img": "http://www.serebii.net/pokemongo/pokemon/007.png",
-    "type": [
-      "Water"
-    ],
-    "height": "0.51 m",
-    "weight": "9.0 kg",
-    "candy": "Squirtle Candy",
-    "candy_count": 25,
-    "egg": "2 km",
-    "spawn_chance": 0.58,
-    "avg_spawns": 58,
-    "spawn_time": "04:25",
-    "multipliers": [2.1],
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
-    "next_evolution": [{
-      "num": "008",
-      "name": "Wartortle"
-    }, {
-      "num": "009",
-      "name": "Blastoise"
-    }]
-  }, {
-    "id": 8,
-    "num": "008",
-    "name": "Wartortle",
-    "img": "http://www.serebii.net/pokemongo/pokemon/008.png",
-    "type": [
-      "Water"
-    ],
-    "height": "0.99 m",
-    "weight": "22.5 kg",
-    "candy": "Squirtle Candy",
-    "candy_count": 100,
-    "egg": "Not in Eggs",
-    "spawn_chance": 0.034,
-    "avg_spawns": 3.4,
-    "spawn_time": "07:02",
-    "multipliers": [1.4],
-    "weaknesses": [
-      "Electric",
-      "Grass"
-    ],
-    "prev_evolution": [{
-      "num": "007",
-      "name": "Squirtle"
-    }],
-    "next_evolution": [{
-      "num": "009",
-      "name": "Blastoise"
-    }]
+
+const tidyData = [{
+  "name": "Bulbasaur" 
+ }, {
+  "name": "Charmander"
+ }, {
+  "name": "Venusaur"
   }
 ];
-const tidyPokeDownward = [{
-  "id": 8,
-  "num": "008",
-  "name": "Wartortle",
-  "img": "http://www.serebii.net/pokemongo/pokemon/008.png",
-  "type": [
-    "Water"
-  ],
-  "height": "0.99 m",
-  "weight": "22.5 kg",
-  "candy": "Squirtle Candy",
-  "candy_count": 100,
-  "egg": "Not in Eggs",
-  "spawn_chance": 0.034,
-  "avg_spawns": 3.4,
-  "spawn_time": "07:02",
-  "multipliers": [1.4],
-  "weaknesses": [
-    "Electric",
-    "Grass"
-  ],
-  "prev_evolution": [{
-    "num": "007",
-    "name": "Squirtle"
-  }],
-  "next_evolution": [{
-    "num": "009",
-    "name": "Blastoise"
-  }]
-}, {
-  "id": 7,
-  "num": "007",
-  "name": "Squirtle",
-  "img": "http://www.serebii.net/pokemongo/pokemon/007.png",
-  "type": [
-    "Water"
-  ],
-  "height": "0.51 m",
-  "weight": "9.0 kg",
-  "candy": "Squirtle Candy",
-  "candy_count": 25,
-  "egg": "2 km",
-  "spawn_chance": 0.58,
-  "avg_spawns": 58,
-  "spawn_time": "04:25",
-  "multipliers": [2.1],
-  "weaknesses": [
-    "Electric",
-    "Grass"
-  ],
-  "next_evolution": [{
-    "num": "008",
-    "name": "Wartortle"
+const tidyDataReverse = [{
+  "name": "Venusaur"
   }, {
-    "num": "009",
-    "name": "Blastoise"
-  }]
+    "name": "Charmander" 
 }, {
-  "id": 9,
-  "num": "009",
-  "name": "Blastoise",
-  "img": "http://www.serebii.net/pokemongo/pokemon/009.png",
-  "type": [
-    "Water"
-  ],
-  "height": "1.60 m",
-  "weight": "85.5 kg",
-  "candy": "Squirtle Candy",
-  "egg": "Not in Eggs",
-  "spawn_chance": 0.0067,
-  "avg_spawns": 0.67,
-  "spawn_time": "00:06",
-  "multipliers": null,
-  "weaknesses": [
-    "Electric",
-    "Grass"
-  ],
-  "prev_evolution": [{
-    "num": "007",
-    "name": "Squirtle"
-  }, {
-    "num": "008",
-    "name": "Wartortle"
-  }]
+  "name": "Bulbasaur"
 }];
-
 test('orderData con parámetros de aToZ debería devolver los pokémon ordenado por nombre descendente', () => {
-  expect(orderData(untidyPoke, "name", "aToZ")).toEqual(tidyPoke);
+  expect(orderData(untidyData, "name", "aToZ")).toEqual(tidyData);
+});
+
+test('orderData con parámetros de zToA debería devolver los pokémon ordenado por nombre de la A a la Z', () => {
+  expect(orderData(untidyData, "name", "zToA")).toEqual(tidyData.reverse());
 });
 
 test('orderData con parámetros de zToA debería devolver los pokémon ordenado por nombre de la Z a la A', () => {
-  expect(orderData(untidyPoke, "name", "zToA")).toEqual(tidyPoke.reverse());
-});
-
-test('orderData con parámetros de zToA debería devolver los pokémon ordenado por nombre de la Z a la A', () => {
-  expect(orderData(untidyPoke, "name", "zToA")).toEqual(tidyPokeDownward);
+  expect(orderData(untidyData, "name", "zToA")).toEqual(tidyDataReverse);
 });
